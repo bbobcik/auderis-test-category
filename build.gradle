@@ -3,7 +3,7 @@ apply plugin: 'signing'
 apply plugin: 'maven'
 
 group 'cz.auderis'
-version '1.0.1-SNAPSHOT'
+version '1.0.1'
 ext.releaseBuild = !version.endsWith('-SNAPSHOT')
 
 sourceCompatibility = '1.7'

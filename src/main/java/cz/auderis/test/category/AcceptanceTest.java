@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Boleslav Bobcik - Auderis
+ * Copyright 2016 Boleslav Bobcik - Auderis
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@
 package cz.auderis.test.category;
 
 /**
- * Denotes category of build verification (sanity) tests.
- * For more information, see Wikipedia page on <a href="https://en.wikipedia.org/wiki/Sanity_check">Sanity Testing</a>.
+ * Denotes category of important tests that support decisions about quality
+ * of the system from requirements' point of view.
  */
-public interface SanityTest {
+public interface AcceptanceTest {
 
-	// Marker interface
+    // Marker interface
 
 }
