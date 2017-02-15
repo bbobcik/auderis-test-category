@@ -32,6 +32,18 @@
  * by code changes during QA phase</li>
  * <li>{@link cz.auderis.test.category.PerformanceTest} - tests that verify performance aspects of code</li>
  * </ul>
+ * <li><b>Platform specific tests</b>
+ * <ul>
+ * <li>{@link cz.auderis.test.category.PlatformTest} - tests that check platform dependent aspects
+ * <ul>
+ * <li>{@link cz.auderis.test.category.LinuxPlatformTest} - tests targeting Linux</li>
+ * <li>{@link cz.auderis.test.category.WindowsPlatformTest} - tests targeting Windows</li>
+ * <li>{@link cz.auderis.test.category.OSXPlatformTest} - tests targeting OSX</li>
+ * <li>{@link cz.auderis.test.category.AndroidPlatformTest} - tests targeting Android</li>
+ * </ul>
+ * </li>
+ * </ul>
+ * </li>
  * <li><b>Other test aspects</b>
  * <ul>
  * <li>{@link cz.auderis.test.category.UserInterfaceTest} - tests targeted at user interface</li>
