@@ -12,13 +12,13 @@ These parts are explained below in detail.
     <dependency>
         <groupId>cz.auderis</groupId>
         <artifactId>auderis-test-category</artifactId>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
         <scope>test</scope>
     </dependency>
     
     Gradle:
     dependencies {
-        compileTest: 'cz.auderis:auderis-test-category:1.0.1'
+        compileTest: 'cz.auderis:auderis-test-category:1.1.0'
     }
 
 
