@@ -1,26 +1,33 @@
-# auderis-test-categories
+# auderis-test-category - Metadata for Java tests
 
-This library provides rich metadata to JUnit tests and consists of two main parts:
+This library provides rich metadata to JUnit4 tests and consists of two main parts:
   * Test metadata annotations
   * Test categories for test classification
    
 These parts are explained below in detail.
 
+[![Build Status](https://travis-ci.org/bbobcik/auderis-test-category.svg?branch=master)](https://travis-ci.org/bbobcik/auderis-test-category)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cz.auderis/auderis-test-category/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cz.auderis/auderis-test-category)
+
+
 ## Artifact dependency declaration
 
-    Maven:
+Maven:
+```Maven POM
     <dependency>
         <groupId>cz.auderis</groupId>
         <artifactId>auderis-test-category</artifactId>
         <version>1.1.0</version>
         <scope>test</scope>
     </dependency>
-    
-    Gradle:
+```
+   
+Gradle:
+```Gradle
     dependencies {
         compileTest: 'cz.auderis:auderis-test-category:1.1.0'
     }
-
+```
 
 
 ## Metadata annotations
@@ -38,16 +45,17 @@ the issue-test relation is through the use of Java annotation at the test source
 
 Example:
 
+```java
     public class NumericTest {
     
         @Test
         @VerifiesIssue( 'JIRA-739' )
         public void shouldPreventOverflowWhenValueIsLarge() throws Exception {
-            ...
+            // ...
         }
      
     }
-
+```
 
 
 ## Test categories
@@ -98,15 +106,16 @@ In the following example, test method `shouldConnectToDatabase` has 3 categories
 assigned: `UnstableTest` (from class annotation), `DatabaseTest` (from method
 annotation) and `IntegrationTest` (implicit ancestor of the database test category).
 
+```java
     @Category( UnstableTest.class )
     public class SomeTests {
         @Test
         @Category( DatabaseTest.class )
         public void shouldConnectToDatabase() throws Exception {
-            ...
+            // ...
         }
     }
-
+```
 
 ## License
 
